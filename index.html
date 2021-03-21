@@ -1,0 +1,794 @@
+<style>
+    #container {
+        width: inherit;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+
+    html,
+    body {
+        user-select: none;
+        animation-name: seizures;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 10s;
+    }
+
+    @keyframes seizures {
+        0% {
+            background-color: #302828;
+        }
+
+        50% {
+            background-color: #111;
+        }
+
+        100% {
+            background-color: #302828;
+        }
+    }
+
+    .feature-box {
+        width: 100%;
+        height: 180px;
+        background-color: whitesmoke;
+        border-radius: 0.7cm;
+        user-select: none;
+
+    }
+
+    p.feature-title {
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        color: black;
+        font-size: x-large;
+        margin-top: 29px;
+    }
+
+    p.feature-contents {
+        text-align: center;
+        font-size: medium;
+        color: black;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 23px;
+    }
+
+    h1.title {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 63px;
+        color: whitesmoke;
+        margin-top: 34px;
+    }
+
+    p.feature {
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        font-size: 32px;
+        margin-top: 100px;
+        color: whitesmoke;
+    }
+
+    p.menu-menu {
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        font-size: 19px;
+        margin-top: auto;
+        color: black;
+    }
+
+    p.feature-text {
+        text-align: center;
+        font-family: 'Titillium web';
+        font-size: 47px;
+        color: white;
+        margin-top: 6%;
+    }
+
+    p.panel-text {
+        text-align: center;
+        font-family: 'Titillium web';
+        font-size: 42px;
+        color: white;
+        margin-top: 13px;
+    }
+
+    p.category-explanation {
+        text-align: center;
+        font-family: 'Titillium web';
+        margin-left: 4%;
+        margin-right: 4%;
+        color: white;
+    }
+
+    p.made-by {
+        text-align: center;
+        font-family: 'arimo';
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1cm;
+        color: white;
+    }
+
+    p.inside-box-text {
+        text-align: center;
+        font-family: 'Quicksand';
+        font-size: 37px;
+        color: white;
+        margin-top: 21px;
+    }
+
+    nav.level {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    p.title {
+        color: white;
+    }
+
+    p.heading {
+        color: white;
+    }
+
+    a.avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 240px;
+        height: 240px;
+        border-radius: 0.5cm;
+        margin-top: 5px;
+    }
+
+    img.avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5cm;
+        margin-top: 5px;
+
+    }
+
+    .my-box {
+        width: 93%;
+        height: 98%;
+        background-color: #555;
+        border-radius: 0.7cm;
+        user-select: none;
+        animation-name: boxSeizures;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 10s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    @keyframes boxSeizures {
+        0% {
+            background-color: #222830;
+        }
+
+        50% {
+            background-color: #292d33;
+        }
+
+        100% {
+            background-color: #25282d;
+        }
+    }
+
+    div.box {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .nav li {
+        display: inline;
+        font-size: 20px;
+        user-select: none;
+        text-align: center;
+        padding: 1%;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: center;
+        vertical-align: middle;
+    }
+
+    img.Image-showoff-left {
+        margin: left;
+        margin-top: 40px;
+        border-radius: 0.7cm;
+    }
+
+    img.Image-card {
+        margin: left;
+        margin-top: 30px;
+        border-radius: 0.7cm;
+    }
+
+    img.Image-showoff-right {
+        margin: right;
+        margin-top: 40px;
+        border-radius: 0.7cm;
+    }
+
+
+    p.text-showoff-right {
+        text-align: center;
+        font-family: 'Titillium web';
+        font-size: 23px;
+        color: white;
+    }
+
+    .showoff-left li {
+        display: inline;
+        margin: auto;
+    }
+
+    div.text-showoff-right {
+        text-align: center;
+        font-family: 'Titillium web';
+        font-size: 23px;
+        color: white;
+    }
+
+    div.text-showoff-left {
+        text-align: center;
+        font-family: 'Titillium web';
+        font-size: 23px;
+        color: white;
+    }
+
+    @media only screen and (min-width: 1032px) {
+        .nav {
+            display: flex;
+        }
+    }
+
+    a {
+        color: #2F56B0;
+        position: relative;
+        text-decoration: none;
+        transition: color .4s ease-out;
+    }
+
+    a:hover {
+        color: #457DFB;
+        right: 0;
+        text-decoration: none;
+    }
+
+    a:hover:after {
+        border-color: #457DFB;
+        right: 0;
+    }
+
+    a:after {
+        border-radius: 1em;
+        border-top: .1em solid #2F56B0;
+        content: "";
+        position: absolute;
+        right: 100%;
+        bottom: .14em;
+        left: 0;
+        transition: right .4s cubic-bezier(0, .5, 0, 1),
+            border-color .4s ease-out;
+    }
+
+    a:hover:after {
+        animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
+        border-color: #457DFB;
+    }
+
+
+
+    @keyframes anchor-underline {
+
+        0%,
+        10% {
+            left: 0;
+            right: 100%;
+        }
+
+        40%,
+        60% {
+            left: 0;
+            right: 0;
+        }
+
+        90%,
+        100% {
+            left: 100%;
+            right: 0;
+        }
+    }
+
+    .abe {
+        height: 20px;
+        position: relative;
+    }
+
+    .abee {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .suit_and_tie {
+        /* font */
+        color: black;
+        font-size: 20px;
+        font-family: helvetica;
+
+        /* remove blue underline */
+        text-decoration: none;
+
+        /* border */
+        border: 2px solid black;
+        border-radius: 20px;
+
+        /* transitions */
+        transition-duration: .2s;
+        -webkit-transition-duration: .2s;
+        -moz-transition-duration: .2s;
+
+        /* other */
+        background-color: white;
+        padding: 4px 30px;
+    }
+
+    .suit_and_tie:hover {
+        /* update text color and background color */
+        color: white;
+        background-color: black;
+
+        /* transitions */
+        transition-duration: .2s;
+        -webkit-transition-duration: .11s;
+        -moz-transition-duration: .2s;
+    }
+
+    .variation-a,
+    .variation-b {
+        display: inline-block;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .variation-b {
+        background-color: black;
+    }
+
+    .variation-b .suit_and_tie {
+        /* font */
+        color: white;
+
+        /* border */
+        border: 2px solid white;
+
+        /* other */
+        background-color: black;
+    }
+
+    .variation-b .suit_and_tie:hover {
+        /* font */
+        color: black;
+
+        /* border */
+        border: 2px solid black;
+
+        /* other */
+        background-color: white;
+    }
+
+    button.suit_and_tie {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    div.other-information {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 23px;
+    }
+
+    p.sub-info {
+        color: greenyellow;
+        font-size: 19px;
+    }
+
+    p.title {
+        text-align: center;
+        margin-top: 3%;
+        font-size: 50px;
+    }
+</style>
+
+<head>
+    <title>ChilledChino</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="icon"
+        href="https://cdn.discordapp.com/avatars/752105298789007472/98c9ace2484b17b468405c7190528dae.webp?size=2048"
+        type="image/x-icon">
+</head>
+<meta name='viewport' content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChilledChino</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link href="./css/dashboard.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <a class='avatar'>
+                <img src="https://cdn.discordapp.com/avatars/752105298789007472/98c9ace2484b17b468405c7190528dae.webp?size=2048"
+                    alt="ChilledChino" class="avatar" />
+            </a>
+            <p class='title'> ChilledChino </p>
+            <p class='feature'> A multifunction bot that has a lot of commands. More than 350+ commands and 14 public
+                categories that you can use in your guild! With 5+ free music effect and free lag music! </p>
+        </div>
+        <a href='https://discord.com/oauth2/authorize?client_id=752105298789007472&scope=bot&permissions=1479878742'
+            target="_blank">
+            <div class="variation-a">
+                <button class="suit_and_tie">Invite</button>
+            </div>
+        </a>
+        <p class="feature-text"> Features </p>
+        <hr>
+        <ul class="nav">
+            <li>
+                <div class="feature-box">
+                    <p class="feature-title"> No hidden payment </p>
+                    <p class="feature-contents"> Play your favourite music from 7 different sources and get 5+ free
+                        effects and no lag + stable music player!
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="feature-box">
+                    <p class="feature-title"> Easy to use </p>
+                    <p class="feature-contents"> We have config categories so you can see all the available configs
+                        there </p>
+                </div>
+            </li>
+            <li>
+                <div class="feature-box">
+                    <p class="feature-title"> Stable Player </p>
+                    <p class="feature-contents"> You can get Free lag, free filters, and 7 music sources player that you
+                        can play in your guild with your friend! Get high quality music player with lavalink </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <div class="Image-showoff-left">
+                    <img class="Image-showoff-left" src='https://i.imgur.com/gkcUOW7.png' alt="Getanime-command"
+                        width="740" height="440" />
+                </div>
+            </li>
+            <li>
+                <div class="text-showoff-right">
+                    <p class="feature-text"> Anime </p>
+                    <hr>
+                    <p> For weebs, we provide commands for all of you. Like this getanime command, you can search for
+                        available
+                        anime information with this command. Powered by:
+                        <a href="https://kitsu.io/explore/anime" target="_blank">kitsu.io</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <div class="text-showoff-left">
+                    <p class="panel-text"> Clean Player </p>
+                    <hr>
+                    <p> You want a clean music channel to play your favourite music or playist? Here you can get clean
+                        and easy music controller on your guild! </p>
+                </div>
+            </li>
+            <li>
+                <div class="Image-showoff-left">
+                    <img class="Image-showoff-left" src='https://i.imgur.com/oGTy9Fh.png' alt="channel" width="740"
+                        height="440" />
+                </div>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <div class="Image-showoff-left">
+                    <img class="Image-showoff-left" src='https://i.imgur.com/VW2aaQX.png' alt="channel" width="740"
+                        height="440" />
+                </div>
+            </li>
+            <li>
+                <div class="text-showoff-left">
+                    <p class="panel-text"> Music Player </p>
+                    <hr>
+                    <p> Do you like listening music on Discord? We have music player that has free lag, 6+ filters, and
+                        support 7 sources, Youtube, Spotify, Twitch, Bandcamp, HTTP, Radio or even your own file! All
+                        the filters are available for all and doesn't need to vote or pay. </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <div class="text-showoff-right">
+                    <p class="panel-text"> Translator </p>
+                    <hr>
+                    <p> Have friends who speak foreign languages? You don't need to open an app or the web to translate
+                        it. This
+                        bot provides a translation feature which is powered by
+                        <a href="https://translate.google.com/" target="_blank">Google Translate</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="Image-showoff-left">
+                    <img class="Image-showoff-left" src='https://i.imgur.com/7Tl3drJ.png' alt="Translate-command"
+                        width="740" height="440" />
+                </div>
+            </li>
+        </ul>
+    </section>
+    <p class="feature-text"> Categories </p>
+    <hr>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Image Gen </p>
+                    <hr>
+                    <p class="category-explanation"> Want to re-generate your Avatar or Attachments with filter? We have
+                        69+ Image
+                        generator commands available for you </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/0LCQpi3.png' alt="spank-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Anime </p>
+                    <hr>
+                    <p class="category-explanation"> Ay weebs! We have 10+ Anime Commands for you. Such as character,
+                        getanime,
+                        getmanga, and other! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/yM9G2np.png' alt="Character-command"
+                            width="95%" height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Fun </p>
+                    <hr>
+                    <p class="category-explanation"> This is ASCII command. We give you 20+ fun commands so you didn't
+                        bored in your
+                        server such as 8Ball, Simprate, and other </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/UkSNurh.png' alt="ASCII-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Games </p>
+                    <hr>
+                    <p class="category-explanation"> Play with your friends so you don't get bored with General chat on
+                        the server.
+                        We provide 3 multiplayer games and 1 singleplayer game </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/msdefcx.png' alt="aki-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Admin </p>
+                    <hr>
+                    <p class="category-explanation"> Someone caused trouble on your server? You can click or ban him to
+                        stop causing
+                        trouble. You can manage servers such as slowmode, addrole, and others </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/VJobb8v.png' alt="ban-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Information </p>
+                    <hr>
+                    <p class="category-explanation"> Learning Japanese but too lazy to open other apps other than
+                        Discord? You can use our Japanese Dictionary ( jisho ) command to help you learning Japanese.
+                        We provide 40+ command information </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/AUh6UyC.png' alt="jisho-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Music </p>
+                    <hr>
+                    <p class="category-explanation"> Play your favourite music with 4+ free filters on this bot. You can
+                        play song from youtube and spotify! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/kY7rxWf.png' alt="music-commands" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Nasa </p>
+                    <hr>
+                    <p class="category-explanation"> You love Space? We give you 5+ NASA Commands for Space lover that
+                        want more
+                        informations about Mars and Astronomic Photo of The Day </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/yYwTDzg.png' alt="APOD-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Bot </p>
+                    <hr>
+                    <p class="category-explanation"> And, you can invite me to your friends so they can enjoy this bot
+                        too! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/zqIhfV9.png' alt="Invite-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Economy </p>
+                    <hr>
+                    <p class="category-explanation"> We provide you 10+ economy commands to play! You can flex how many
+                        money you have and many more! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/NuQ67cO.png' alt="economy-commands" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Leveling </p>
+                    <hr>
+                    <p class="category-explanation"> Compete with your friends, who has the highest rank and who chats
+                        the most! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/iYUVGvi.png' alt="rank-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="my-box">
+                    <p class="inside-box-text"> Utility </p>
+                    <hr>
+                    <p class="category-explanation"> And, you can invite me to your friends so they can enjoy this bot
+                        too! </p>
+                    <div class="Image-showoff-left">
+                        <img class="Image-card" src='https://i.imgur.com/UVuSTCd.png' alt="Invite-command" width="95%"
+                            height="95%" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <p class="feature-text"> Other Information </p>
+    <hr>
+    <div class="other-information">
+        <p class="information">
+            <b>How to change prefix? </b>
+            <br> You can customize your prefix by using
+            nc!prefix < new prefix>
+             <br>for no prefix, just set the prefix to none.
+            <br>
+            <br>
+        </p>
+        <p class="information">
+            <b>How to set logger? </b>
+            <br> You can type
+            nc!modlogs < enable | disable> [ channel_tag ]
+            <hr> You will receive:
+        <p class="sub-info">
+            <br> - edited message
+            <br> - deleted
+            message ( with image )
+            <br> - server mute server deafen
+            <br> - user mute user deafen
+            <br> - user streaming
+            user idle
+            <br> -
+            channel create, update, delete
+            <br> - emoji create, update, delete
+            <br> - user banned or unbanned
+            <br> -
+            bulk deleted message
+        </p>
+        <br>
+        <br>
+        </p>
+        <p class="information">
+            <b>How to set AI channel? </b>
+            <br> You can use
+            <b>nc!setai < enable | disable> [ channel_tag ]
+            </b>, every message you send there, bot will automatically reply
+            you. Powered by Alexa
+            <br>
+            <br>
+        </p>
+    </div>
+
+    <p class="made-by"> Made By Takiyo#0001 </p>
+</body>
+<div class="content"></div>
